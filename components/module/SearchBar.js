@@ -6,9 +6,10 @@ const SearchBar = () => {
 
     const [min, setMin] = useState("");
     const [max, setMax] = useState("");
+    //function
     const searchHandelr = () => {
         if (min && max) {
-            router.push(`/filter ${min} ${max}`)
+            router.push(`/filter/ ${min}/ ${max}`)
         } else {
             alert('Please Enter minimum and maximum price!')
         }
