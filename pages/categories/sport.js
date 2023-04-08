@@ -1,11 +1,10 @@
 
+import CarsList from "@/components/templates/CarsList";
+import carsData from "@/data/carsData";
 const Sport = (props) => {
-    return (
+    const sportCars = carsData.filter((car) => car.category === 'sport')
 
-        <div>
-
-        </div>
-    );
+    return <CarsList data ={sportCars} />
 };
 
 export default Sport;

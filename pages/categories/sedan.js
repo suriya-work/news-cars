@@ -1,11 +1,10 @@
 
-const Sedan = (props) => {
-    return (
+import CarsList from "@/components/templates/CarsList";
+import carsData from "@/data/carsData";
+const sedan = (props) => {
+    const sedanCars = carsData.filter((car) => car.category === 'sedan')
 
-        <div>
-
-        </div>
-    );
+    return <CarsList data ={sedanCars} />
 };
 
-export default Sedan;
+export default sedan;
